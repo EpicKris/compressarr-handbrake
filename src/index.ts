@@ -1,11 +1,11 @@
 import { API } from 'compressarr';
 
 import { PLATFORM_NAME } from './settings';
-import { ExampleCompressarrJobAction } from './platform';
+import { CompressarrHandBrakeJobAction } from './jobAction';
 
 /**
  * This method registers the job action with Compressarr.
  */
 export = (api: API) => {
-    api.registerPlatform(PLATFORM_NAME, ExampleCompressarrJobAction);
+    api.registerJobAction(PLATFORM_NAME, CompressarrHandBrakeJobAction);
 };
