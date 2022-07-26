@@ -27,7 +27,7 @@
   "dependencies": {
     "ffprobe-client": "1.1.6",
     "ffprobe-static": "3.0.0",
-    "handbrake-js": "^5.0.2"
+    "handbrake-js": "^5.0.3"
   },
   "devDependencies": {
     "@types/ffprobe-static": "^2.0.0",
