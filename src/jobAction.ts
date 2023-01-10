@@ -161,7 +161,7 @@ export class CompressarrHandBrakeJobAction implements JobActionPlugin {
 
         if (this.config.preset) {
             try {
-                this.preset = this.getPreset(this.config.preset);
+                this.preset = this.getPreset();
             } catch (error) {
                 this.log.error(getError(error));
             }
