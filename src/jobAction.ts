@@ -266,9 +266,8 @@ export class CompressarrHandBrakeJobAction implements JobActionPlugin {
 
     /**
      * Get Preset
-     * @param preset Preset
      */
-    protected getPreset(preset: string): HandBrakePreset {
+    protected getPreset(): HandBrakePreset {
         const spawnArgs = toSpawnArgs({
             'preset-export': this.config.preset
         }, {
@@ -296,7 +295,6 @@ export class CompressarrHandBrakeJobAction implements JobActionPlugin {
 
         const format = probe.format;
         const videoStream = probe.streams.filter(stream => stream.codec_type === 'video')[0];
-        const audioStream = probe.streams.filter(stream => stream.codec_type === 'audio')[0];
 
         let shouldBreak = true;
 
