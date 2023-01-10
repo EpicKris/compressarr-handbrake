@@ -7,6 +7,7 @@ import ffprobeStatic from 'ffprobe-static';
 import { HandbrakeOptions, spawn } from 'handbrake-js';
 import { HandbrakeCLIPath } from 'handbrake-js/lib/config';
 import toSpawnArgs from 'object-to-spawn-args';
+import { getError } from '@epickris/node-logger';
 
 /** Compressarr HandBrake Job Action Configuration */
 export interface CompressarrHandBrakeJobActionConfig extends JobActionConfig {
@@ -162,7 +163,7 @@ export class CompressarrHandBrakeJobAction implements JobActionPlugin {
             try {
                 this.preset = this.getPreset(this.config.preset);
             } catch (error) {
-                this.log.error(error);
+                this.log.error(getError(error));
             }
         }
 
