@@ -12,7 +12,7 @@
     "url": "https://github.com/EpicKris/compressarr-handbrake/issues"
   },
   "engines": {
-    "node": ">=10.17.0",
+    "node": ">=12.22.0",
     "compressarr": ">=0.0.5"
   },
   "scripts": {
