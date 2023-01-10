@@ -25,6 +25,7 @@
     "compressarr-plugin"
   ],
   "dependencies": {
+    "@epickris/node-logger": "^0.1.1",
     "ffprobe-client": "1.1.6",
     "ffprobe-static": "3.0.0",
     "handbrake-js": "^5.0.3"
